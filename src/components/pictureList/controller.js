@@ -9,8 +9,10 @@ export default class PictureListController {
   }
 
   init() {
-    this.pictureListService.list().then((data) => {
-      this.pictures = data;
+    this.picturesService.list().then((data) => {
+      this.pictures = data.splice(0, 6);
+      console.log(this.pictures);
+      
     });
   }
 }

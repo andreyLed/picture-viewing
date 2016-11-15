@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Pictures</title>
-	<base href="/">
+  <meta charset="UTF-8">
+  <title>Pictures</title>
+  <style>
+    .container {
+      max-width: 960px;
+      padding: 0 40px;
+      margin: 0 auto;
+    }
+  </style>
+  <base href="/">
 </head>
 
 
 <body ng-app="app">
   <pictures-header></pictures-header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<ui-view></ui-view>
-			</div>
-		</div>
-	</div>
+
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
 </body>
 
 </html>
