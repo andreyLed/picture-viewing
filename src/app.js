@@ -13,12 +13,12 @@ ng.module('app', [components, services, uiRouter])
       {
         name: 'home',
         url: '/',
-        component: 'picturesList'
+        component: 'pictureList'
       },
       {
         name: 'album',
         url: '/albums/:id/photo',
-        component: 'picturesList'
+        component: 'pictureList'
       },
       {
         name: 'picture',
