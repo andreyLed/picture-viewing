@@ -1,5 +1,6 @@
 # README #
 
+![alt text](http://pixs.ru/showimage/Screenshot_5428038_24066470.jpg)
 
 ### Как настроить и запустить этот проект? ###
 
