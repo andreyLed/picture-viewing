@@ -1,6 +1,6 @@
 # README #
 
-![alt text](http://pixs.ru/showimage/Screenshot_5428038_24066470.jpg)
+![alt text](http://i12.pixs.ru/storage/4/7/0/Screenshot_5428038_24066470.jpg)
 
 ### Как настроить и запустить этот проект? ###
 
