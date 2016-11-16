@@ -8,9 +8,6 @@ export default class pictureController {
   $onInit() {
     this.picturesService.detail(this.id).then((data) => {
       this.pictureData = data;
-      console.log(this.pictureData);
     });
   }
-
-  
 }

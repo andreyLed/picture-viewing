@@ -1,7 +1,11 @@
 import ng from 'angular';
 
 import '../src/assets/style/reset.css';
+import '../src/assets/style/index.less';
+
 import 'font-awesome/less/font-awesome.less';
+import 'animate.css/animate.css';
+
 
 import uiRouter from 'angular-ui-router';
 import components from './components';
@@ -16,7 +20,10 @@ ng.module('app', [components, services, uiRouter])
       {
         name: 'home',
         url: '/',
-        component: 'pictureList'
+        component: 'pictureList',
+        data: {
+          pageType: 'home'
+        }
       },
       {
         name: 'albums',
@@ -26,7 +33,10 @@ ng.module('app', [components, services, uiRouter])
       {
         name: 'album',
         url: '/albums/:id/photo',
-        component: 'pictureList'
+        component: 'pictureList',
+        data: {
+          pageType: 'albums'
+        }
       },
       {
         name: 'picture',

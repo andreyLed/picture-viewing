@@ -1,8 +1,11 @@
 <div class="row-item-wrapper">
-  <a ui-sref="picture({id: $ctrl.pictureItemData.id})" class="row-item-content-wrapper">
+  <a ui-sref="picture({id: $ctrl.pictureItemData.id})" class="row-item-content-wrapper" title="Open this picture">
     <img class="row-item-image" src={{$ctrl.pictureItemData.url}} alt="picture">
   </a>
   <div class="row-item-title-wrapper">
-    <span ng-bind='$ctrl.pictureItemData.title'></span>
+    <span class="row-item-title" ng-bind='$ctrl.pictureItemData.title'></span>
+    <a ui-sref="album({id: $ctrl.pictureItemData.albumId})" class="row-item-title-icon" title="Open albums">
+      <i class="fa fa-picture-o" aria-hidden="true"></i>
+    </a>
   </div>
 </div>

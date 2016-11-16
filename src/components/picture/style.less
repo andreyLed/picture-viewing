@@ -4,14 +4,27 @@
   
   .picture-content-wrapper {
     max-width: 100%;
-    
     .picture-content {
-      
+      max-width: 100%;
     }
   }
   .picture-title-wrapper {
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     .picture-title {
-        
+      display: block;
+      margin-right: 15px;
+      font-size: 20px;
+    }
+    .picture-title-icon {
+      display: block;
+      font-size: 25px;
+      color: black;
+      &:hover {
+        animation: bounceIn 1s;
+      }
     }
   }
 }

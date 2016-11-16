@@ -3,9 +3,37 @@
   .row-item-content-wrapper {
     .row-item-image{
       max-width: 100%;
+      &:hover {
+        animation: bounce 0.5s;
+      }
     }
   }
   .row-item-title-wrapper {
     padding-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .row-item-title {
+      display: block;
+      margin-right: 15px;
+
+    }
+    .row-item-title-icon {
+      display: block;
+      font-size: 25px;
+      color: black;
+      &:hover {
+        animation: bounceIn 1s;
+      }
+    }
+    @media screen {
+      @media (max-width: 780px) {
+        justify-content: center;
+        .row-item-title {
+          font-size: 20px;
+        }
+      }
+      
+    } 
   }
 }
