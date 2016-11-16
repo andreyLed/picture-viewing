@@ -1,18 +1,19 @@
 import ng from 'angular';
 
-import '../src/assets/style/reset.css';
-import '../src/assets/style/index.less';
 
 import 'font-awesome/less/font-awesome.less';
 import 'animate.css/animate.css';
 
-
 import uiRouter from 'angular-ui-router';
+import ngInfiniteScroll from 'ng-infinite-scroll';
+
+import '../src/assets/style/reset.css';
+import '../src/assets/style/index.less';
 import components from './components';
 import services from './services';
 
 
-ng.module('app', [components, services, uiRouter])
+ng.module('app', [components, services, uiRouter, ngInfiniteScroll])
   .config(($locationProvider, $stateProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true);

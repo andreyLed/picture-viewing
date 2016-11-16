@@ -1,5 +1,4 @@
 <h2 class="list-title" ng-bind="$ctrl.pageTitle"></h2>
-<div class="row">
-  
+<div class="row" infinite-scroll='$ctrl.addMorePictures()' infinite-scroll-disabled='$ctrl.isScrolleDisable'>
   <picture-list-item class="row-item" ng-repeat="item in $ctrl.pictures track by $index" picture-item-data=item></picture-list-item>
 </div>
