@@ -1,0 +1,8 @@
+<h2 class="list-title" ng-bind="$ctrl.pageTitle"></h2>
+<div class="row">
+  <ul>
+    <li class="row-list-item" ng-repeat="item in $ctrl.albums track by $index">
+      <a ui-sref="album({id: item.id})"  class="row-list-item-link" ng-bind='item.title'>
+    </li>
+  </ul>
+</div>
