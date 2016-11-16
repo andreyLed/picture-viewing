@@ -1,5 +1,7 @@
 import ng from 'angular';
 
+import 'font-awesome/less/font-awesome.less';
+
 import uiRouter from 'angular-ui-router';
 import components from './components';
 import services from './services';
@@ -14,6 +16,11 @@ ng.module('app', [components, services, uiRouter])
         name: 'home',
         url: '/',
         component: 'pictureList'
+      },
+      {
+        name: 'albums',
+        url: '/albums',
+        component: 'albums'
       },
       {
         name: 'album',

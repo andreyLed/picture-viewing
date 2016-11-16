@@ -1,8 +1,8 @@
 <div>
-  <div class="row-item-content-wrapper">
+  <a ui-sref="picture({id: $ctrl.pictureItemData.id})" class="row-item-content-wrapper">
     <img class="row-item-image" src={{$ctrl.pictureItemData.url}} alt="picture">
-  </div>
-  <div class="text-wrapper">
-    <a href="#" class="global-link" ng-bind='$ctrl.pictureItemData.title'></a>
+  </a>
+  <div class="row-item-title-wrapper">
+    <span ng-bind='$ctrl.pictureItemData.title'></span>
   </div>
 </div>

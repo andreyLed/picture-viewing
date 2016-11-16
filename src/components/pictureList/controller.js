@@ -5,14 +5,10 @@ export default class PictureListController {
   }
 
   $onInit() {
-    this.init();
-  }
-
-  init() {
     this.picturesService.list().then((data) => {
-      this.pictures = data.splice(0, 6);
+      this.pictures = data.slice(0, 6);
       console.log(this.pictures);
-      
     });
   }
+
 }

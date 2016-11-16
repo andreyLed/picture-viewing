@@ -1,13 +1,6 @@
 export default class pictureListItemController {
-  constructor() {
+  constructor($state) {
     'ngInject';
-    
+    this.$state = $state;
   }
-
-  $onInit() {
-    console.log(this);
-    this.url = this.pictureItemData.url;
-  }
-
-  
 }
