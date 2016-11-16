@@ -1,5 +1,6 @@
 import ng from 'angular';
 
+import '../src/assets/style/reset.css';
 import 'font-awesome/less/font-awesome.less';
 
 import uiRouter from 'angular-ui-router';

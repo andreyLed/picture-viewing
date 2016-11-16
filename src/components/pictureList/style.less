@@ -6,12 +6,29 @@
   padding-bottom: 40px;
   
   .row-item {
-    max-width: 300px;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 20px;
-    box-sizing: content-box;
-    overflow: hidden;
+    @media screen{
+      width: calc(~"100% / 3 - 40px / 3");
+      display: flex;
+      margin-right: 20px;
+      margin-bottom: 20px;  
+      flex-direction: column;
+      box-sizing: content-box;
+      overflow: hidden;
+      &:nth-child(3n) {
+        margin-right: 0;
+       }
+      @media (max-width: 780px) {
+        width: calc(~"100% / 2 - 50px");
+        margin-right: 50px;
+        margin-bottom: 30px; 
+        &:nth-child(2n) {
+        margin-right: 0;
+       }
+      }
+    }
   }
+  
+
 }
+
+
