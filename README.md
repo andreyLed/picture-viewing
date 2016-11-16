@@ -1,6 +1,6 @@
 # README #
 
-![alt text](http://i12.pixs.ru/storage/4/7/0/Screenshot_5428038_24066470.jpg)
+![alt text](https://cloud.githubusercontent.com/assets/22764733/20351352/25bc4d76-ac1b-11e6-8ba3-18774737a835.jpg)
 
 ### Как настроить и запустить этот проект? ###
 
