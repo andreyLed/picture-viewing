@@ -6,5 +6,6 @@ import albums from './albums';
 import picturesHeader from './picturesHeader';
 import picturesFooter from './picturesFooter';
 
-export default ng.module('app.components', [pictureList, pictureListItem, picture, albums, picturesHeader, picturesFooter])
+export default ng.module('app.components', [pictureList, pictureListItem, picture, albums, picturesHeader,
+  picturesFooter])
   .name;
